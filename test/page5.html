@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Использование контейнеров для разработки Web-приложений - Страница 5</title>
+    <link rel="stylesheet" href="../dist/chota.css" />
+    <style>
+      body.dark {
+        --bg-color: #000;
+        --bg-secondary-color: #131316;
+        --font-color: #f5f5f5;
+        --color-grey: #ccc;
+        --color-darkGrey: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="container" role="document">
+      <header role="banner">
+        <h1 class="pull-right" style="margin: 0;">
+          <a href="javascript:void(0)" onclick="switchMode(this)">☀️</a>
+        </h1>
+        <h1>Chota CSS</h1>
+        <div class="clearfix"></div>
+        <p>A small CSS framework.</p>
+        <section>
+
+<!-- Постраничная навигация - меняй активные страницы -->
+            <h1>Навигация по страницам</h1>
+            <div class="tabs">
+              <a href="http://css.goryachevski.net/test/page1.html">Страница 1</a>
+              <a href="http://css.goryachevski.net/test/page2.html">Страница 2</a>
+              <a href="http://css.goryachevski.net/test/page3.html">Страница 3</a>
+              <a href="http://css.goryachevski.net/test/page4.html">Страница 4</a>
+              <a class="active" href="http://css.goryachevski.net/test/page5.html">Страница 5</a>
+              <a href="http://css.goryachevski.net/test/page6.html">Страница 6</a>
+            </div>
+        </section>
+      </header>
+
+<!-- Ниже навигация по странице и тексту (абзацам). Добавляй артикль_ид -->
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#Orkestraciya_i_masshtabirovanie_kontejnerov">Оркестрация и масштабирование контейнеров</a>
+            <ul>
+              <li><a href="#Osnovnye_koncepcii_Kubernetes_klastery_pody_servisy_deplojmenty">Основные концепции Kubernetes: кластеры, поды, сервисы, деплойменты</a></li>
+              <li><a href="#Masshtabirovanie_Web_prilozhenij_s_pomoshchyu_Kubernetes">Масштабирование Web-приложений с помощью Kubernetes</a></li>
+              <li><a href="#Upravlenie_konfiguraciej_i_sekretami">Управление конфигурацией и секретами</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main role="main">
+        
+<!-- Здесь название темы -->
+        <article id="Process_kontejnerizacii_Web_prilozheniya">
+            <header>
+                <h1>Использование контейнеров для разработки Web-приложений</h1>
+            </header>
+            <div>
+            <hr />
+            </div>
+        </article>
+        
+<!-- Начинай делать текстовку -->
+
+<article id="Orkestraciya_i_masshtabirovanie_kontejnerov">
+  <header>
+    <h3>Оркестрация и масштабирование контейнеров</h3>
+  </header>
+  <div>
+    <p>
+      Контейнеризация отлично интегрируется с процессами 
+      непрерывной интеграции и непрерывного развертывания 
+      (CI/CD). Контейнеры позволяют автоматизировать сборку, 
+      тестирование и развертывание приложений.
+    </p>
+    <h4>Основные элементы Kubernetes:</h4>
+    <ul>
+      <li>Кластеры: группы серверов, на которых запускаются контейнеры.</li>
+      <li>Поды: минимальные единицы вычислительных ресурсов, содержащие один или несколько контейнеров.</li>
+      <li>Сервисы: абстракции для доступа к группам подов.</li>
+      <li>Деплойменты: объекты, управляющие обновлениями подов и обеспечивающие их масштабирование.</li>
+    </ul>
+  </div>
+  <center><iframe width="1024" height="550" src="https://www.youtube.com/embed/klmpiHLSuXA?si=dAll9VhavFGEp-6I" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen></iframe></center>
+</article>
+<article id="Masshtabirovanie_Web_prilozhenij_s_pomoshchyu_Kubernetes">
+  <h3>Масштабирование Web-приложений с помощью Kubernetes</h3>
+  </header>
+  <div>
+    <blockquote>
+      <p>
+        Kubernetes позволяет легко масштабировать приложения, 
+        увеличивая или уменьшая количество подов в зависимости 
+        от нагрузки. Масштабирование может быть автоматизировано 
+        с помощью Horizontal Pod Autoscaler, который регулирует 
+        количество подов на основе метрик нагрузки. 
+      </p>
+    </blockquote>
+  </div>
+</article>
+<article id="Upravlenie_konfiguraciej_i_sekretami">
+  <header>
+    <h3>Управление конфигурацией и секретами</h3>
+  </header>
+  <div>
+    <p>
+      Kubernetes предоставляет инструменты для 
+      управления конфигурацией и секретами. ConfigMaps 
+      используются для хранения конфигурационных данных, 
+      а Secrets – для хранения чувствительной информации, 
+      такой как пароли и ключи API
+    </p>
+  </div>
+</article>
+<!-- Кнопка возврата наверх-->
+          <footer>
+            <center><p></p><a href="#top">[Кнопка вверх ⚡️]</a></p></center>
+          </footer>
+
+      </main>
+    </div>
+    <script src="../docs/main.js"></script>
+    
+  </body>
+</html>

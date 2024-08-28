@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Использование контейнеров для разработки Web-приложений - Страница 4</title>
+    <link rel="stylesheet" href="../dist/chota.css" />
+    <style>
+      body.dark {
+        --bg-color: #000;
+        --bg-secondary-color: #131316;
+        --font-color: #f5f5f5;
+        --color-grey: #ccc;
+        --color-darkGrey: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="container" role="document">
+      <header role="banner">
+        <h1 class="pull-right" style="margin: 0;">
+          <a href="javascript:void(0)" onclick="switchMode(this)">☀️</a>
+        </h1>
+        <h1>Chota CSS</h1>
+        <div class="clearfix"></div>
+        <p>A small CSS framework.</p>
+        <section>
+
+<!-- Постраничная навигация - меняй активные страницы -->
+            <h1>Навигация по страницам</h1>
+            <div class="tabs">
+              <a href="http://css.goryachevski.net/test/page1.html">Страница 1</a>
+              <a href="http://css.goryachevski.net/test/page2.html">Страница 2</a>
+              <a href="http://css.goryachevski.net/test/page3.html">Страница 3</a>
+              <a class="active" href="http://css.goryachevski.net/test/page4.html">Страница 4</a>
+              <a href="http://css.goryachevski.net/test/page5.html">Страница 5</a>
+              <a href="http://css.goryachevski.net/test/page6.html">Страница 6</a>
+            </div>
+        </section>
+      </header>
+
+<!-- Ниже навигация по странице и тексту (абзацам). Добавляй артикль_ид -->
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#CI_CD_i_kontejnerizaciya">CI/CD и контейнеризация</a>
+            <ul>
+              <li><a href="#Integraciya_kontejneroм_v_CI_CD_pajplajny">Интеграция контейнеров в CI/CD пайплайны</a></li>
+              <li><a href="#Primery_ispolzovaniya_Jenkins_GitLab_CI_CD_i_drugih_instrumentov">Примеры использования Jenkins, GitLab CI/CD и других инструментов</a></li>
+              <li><a href="#Avtomatizaciya_razvertyvaniya_i_testirovaniya_Web_prilozhenij">Автоматизация развертывания и тестирования Web-приложений</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main role="main">
+        
+<!-- Здесь название темы -->
+        <article id="Process_kontejnerizacii_Web_prilozheniya">
+            <header>
+                <h1>Использование контейнеров для разработки Web-приложений</h1>
+            </header>
+            <div>
+            <hr />
+            </div>
+        </article>
+        
+<!-- Начинай делать текстовку -->
+
+<article id="Integraciya_kontejneroм_v_CI_CD_pajplajny">
+  <header>
+    <h3>Интеграция контейнеров в CI/CD пайплайны</h3>
+  </header>
+  <div>
+    <p>
+      Контейнеризация отлично интегрируется с процессами 
+      непрерывной интеграции и непрерывного развертывания 
+      (CI/CD). Контейнеры позволяют автоматизировать сборку, 
+      тестирование и развертывание приложений.
+    </p>
+  </div>
+</article>
+<article id="Primery_ispolzovaniya_Jenkins_GitLab_CI_CD_i_drugih_instrumentov">
+  <h3>Примеры использования Jenkins, GitLab CI/CD и других инструментов</h3>
+  </header>
+  <div>
+    <blockquote>
+      <cite><a href="https://www.jenkins.io/">Jenkins.io</a></cite>
+      <p>
+        Jenkins и GitLab CI/CD предоставляют мощные инструменты 
+        для работы с контейнерами. Например, в Jenkins можно настроить 
+        пайплайн, который будет автоматически собирать Docker-образы и 
+        развертывать их на сервере.  
+      </p>
+      <cite><a href="https://docs.gitlab.com/ee/ci/">docs.gitlab.com</a></cite>
+      <p>
+        GitLab CI/CD имеет встроенные инструменты для создания и 
+        развертывания контейнеров, что делает процесс CI/CD более 
+        простым и удобным.
+      </p>
+    </blockquote>
+  </div>
+  <center><iframe width="1024" height="550" src="https://www.youtube.com/embed/Y-hYifHkjMs?si=rHup5WJwgEf7j9Y7" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe></center>
+</article>
+<article id="Avtomatizaciya_razvertyvaniya_i_testirovaniya_Web_prilozhenij">
+  <header>
+    <h3>Автоматизация развертывания и тестирования Web-приложений</h3>
+  </header>
+  <div>
+    <p>
+      Автоматизация процессов сборки и развертывания позволяет 
+      ускорить разработку и снизить количество ошибок. Например, 
+      можно настроить автоматический запуск тестов после сборки 
+      Docker-образа, чтобы убедиться в корректности работы приложения.
+    </p>
+  </div>
+</article>
+<!-- Кнопка возврата наверх-->
+          <footer>
+            <center><p></p><a href="#top">[Кнопка вверх ⚡️]</a></p></center>
+          </footer>
+
+      </main>
+    </div>
+    <script src="../docs/main.js"></script>
+    
+  </body>
+</html>

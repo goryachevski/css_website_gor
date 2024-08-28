@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Использование контейнеров для разработки Web-приложений - Страница 6</title>
+    <link rel="stylesheet" href="../dist/chota.css" />
+    <style>
+      body.dark {
+        --bg-color: #000;
+        --bg-secondary-color: #131316;
+        --font-color: #f5f5f5;
+        --color-grey: #ccc;
+        --color-darkGrey: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="container" role="document">
+      <header role="banner">
+        <h1 class="pull-right" style="margin: 0;">
+          <a href="javascript:void(0)" onclick="switchMode(this)">☀️</a>
+        </h1>
+        <h1>Chota CSS</h1>
+        <div class="clearfix"></div>
+        <p>A small CSS framework.</p>
+        <section>
+
+<!-- Постраничная навигация - меняй активные страницы -->
+            <h1>Навигация по страницам</h1>
+            <div class="tabs">
+              <a href="http://css.goryachevski.net/test/page1.html">Страница 1</a>
+              <a href="http://css.goryachevski.net/test/page2.html">Страница 2</a>
+              <a href="http://css.goryachevski.net/test/page3.html">Страница 3</a>
+              <a href="http://css.goryachevski.net/test/page4.html">Страница 4</a>
+              <a href="http://css.goryachevski.net/test/page5.html">Страница 5</a>
+              <a class="active" href="http://css.goryachevski.net/test/page6.html">Страница 6</a>
+
+            </div>
+        </section>
+      </header>
+
+<!-- Ниже навигация по странице и тексту (абзацам). Добавляй артикль_ид -->
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#Prakticheskie_primery_i_kejsy_ispolzovaniya">Практические примеры и кейсы использования</a>
+            <ul>
+              <li><a href="#Primery_uspeshnyh_proektov_ispolzuyushchih_kontejnery_dlya_Web_prilozhenij">Примеры успешных проектов, использующих контейнеры для Web-приложений</a></li>
+              <li><a href="#Problemy_i_resheniya_pri_ispolzovanii_kontejnerov_v_realnyh_proektah">Проблемы и решения при использовании контейнеров в реальных проектах</a></li>
+              <li><a href="#Budushchee_kontejnerizacii_i_razvitie_tekhnologij">Будущее контейнеризации и развитие технологий</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main role="main">
+        
+<!-- Здесь название темы -->
+        <article id="Process_kontejnerizacii_Web_prilozheniya">
+            <header>
+                <h1>Использование контейнеров для разработки Web-приложений</h1>
+            </header>
+            <div>
+            <hr />
+            </div>
+        </article>
+        
+<!-- Начинай делать текстовку -->
+
+<article id="Primery_uspeshnyh_proektov_ispolzuyushchih_kontejnery_dlya_Web_prilozhenij">
+  <header>
+    <h3>Примеры успешных проектов, использующих контейнеры для Web-приложений</h3>
+  </header>
+  <div>
+    <p>
+      Многие крупные компании, такие как Google, Spotify и Airbnb, 
+      используют контейнеры для разработки и развертывания своих Web-приложений. 
+      Контейнеризация позволяет им быстро внедрять новые функции, тестировать 
+      изменения и масштабировать свои сервисы в ответ на рост трафика.
+    </p>
+    <ul>
+      <li>Google: использует контейнеры для масштабирования своих сервисов.</li>
+      <li>Spotify: использует Docker для управления микросервисами.</li>
+      <li>Airbnb: использует Kubernetes для оркестрации контейнеров.</li>
+    </ul>
+  </div>
+  <div>
+    <center>
+      <img src="https://softwareplanetgroup-wp.s3.amazonaws.com/wp-content/uploads/2020/11/2020_illustration_SPG-Blog_Docker-limits-change.png" alt="Image alt text" />
+    </center>
+  </div>
+</article>
+<article id="Problemy_i_resheniya_pri_ispolzovanii_kontejnerov_v_realnyh_proektah">
+  <h3>Проблемы и решения при использовании контейнеров в реальных проектах</h3>
+  </header>
+  <div>
+    <p>
+      Однако использование контейнеров также связано с некоторыми вызовами. 
+      Например, управление состоянием контейнеров и обеспечение их безопасности 
+      требуют дополнительных усилий. Для решения этих проблем разработаны 
+      различные инструменты и практики, такие как использование непрерывной 
+      интеграции и мониторинга контейнеров.
+    </p>
+  </div>
+</article>
+<article id="Budushchee_kontejnerizacii_i_razvitie_tekhnologij">
+  <header>
+    <h3>Будущее контейнеризации и развитие технологий</h3>
+  </header>
+  <div>
+    <p>
+      Контейнеризация продолжает развиваться. Появляются новые 
+      инструменты и технологии, которые упрощают процесс разработки 
+      и развертывания приложений. В будущем ожидается дальнейшее 
+      улучшение безопасности контейнеров, развитие стандартов и 
+      интеграция с новыми платформами.
+    </p>
+  </div>
+</article>
+<!-- Кнопка возврата наверх-->
+          <footer>
+            <center><p></p><a href="#top">[Кнопка вверх ⚡️]</a></p></center>
+          </footer>
+
+      </main>
+    </div>
+    <script src="../docs/main.js"></script>
+    
+  </body>
+</html>

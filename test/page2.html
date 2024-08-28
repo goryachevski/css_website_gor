@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Использование контейнеров для разработки Web-приложений - Страница 2</title>
+    <link rel="stylesheet" href="../dist/chota.css" />
+    <style>
+      body.dark {
+        --bg-color: #000;
+        --bg-secondary-color: #131316;
+        --font-color: #f5f5f5;
+        --color-grey: #ccc;
+        --color-darkGrey: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="container" role="document">
+      <header role="banner">
+        <h1 class="pull-right" style="margin: 0;">
+          <a href="javascript:void(0)" onclick="switchMode(this)">☀️</a>
+        </h1>
+        <h1>Chota CSS</h1>
+        <div class="clearfix"></div>
+        <p>A small CSS framework.</p>
+        <section>
+
+<!-- Постраничная навигация - меняй активные страницы -->
+            <h1>Навигация по страницам</h1>
+            <div class="tabs">
+              <a href="http://css.goryachevski.net/test/page1.html">Страница 1</a>
+              <a class="active" href="http://css.goryachevski.net/test/page2.html">Страница 2</a>
+              <a href="http://css.goryachevski.net/test/page3.html">Страница 3</a>
+              <a href="http://css.goryachevski.net/test/page4.html">Страница 4</a>
+              <a href="http://css.goryachevski.net/test/page5.html">Страница 5</a>
+              <a href="http://css.goryachevski.net/test/page6.html">Страница 6</a>
+            </div>
+        </section>
+      </header>
+
+<!-- Ниже навигация по странице и тексту (абзацам). Добавляй артикль_ид -->
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#osnovnye_instrumenty_i_tekhnologii_kontejnerizacii">Основные инструменты и технологии контейнеризации</a>
+            <ul>
+              <li><a href="#docker_struktura_i_osnovnye_komandy">Docker: структура и основные команды</a></li>
+              <li><a href="#kubernetes_orkestraciya_kontejnerov">Kubernetes: оркестрация контейнеров</a></li>
+              <li><a href="#podderzhka_drugih_instrumentov_Podman_CRI_O_i_drugie">Поддержка других инструментов: Podman, CRI-O и другие</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main role="main">
+        
+<!-- Здесь название темы -->
+        <article id="osnovnye_instrumenty_i_tekhnologii_kontejnerizacii">
+            <header>
+                <h1>Использование контейнеров для разработки Web-приложений</h1>
+            </header>
+            <div>
+            <hr />
+            </div>
+        </article>
+        
+<!-- Начинай делать текстовку -->
+
+<article id="docker_struktura_i_osnovnye_komandy">
+  <header>
+    <h3>Docker: структура и основные команды</h3>
+  </header>
+  <div>
+    <p>
+      Docker – это наиболее популярный инструмент для контейнеризации. 
+      Он включает:
+    </p>
+  </div>
+  <div>
+    <dl>
+      <dt>Docker Engine</dt>
+      <dd>основной компонент, который запускает и управляет контейнерами.</dd>
+    </dl>s
+    <dl>
+      <dt>Docker Hub</dt>
+      <dd>репозиторий для хранения и обмена Docker-образами.</dd>
+    </dl>
+    <dl>
+      <dt>Docker CLI</dt>
+      <dd>командная строка для управления контейнерами.</dd>
+    </dl>
+    <h4>Основные команды Docker:</h4>
+    <ul>
+      <li>docker build: сборка Docker-образа из Docker-файла</li>
+      <li>docker run: запуск контейнера из образа</li>
+      <li>docker ps: отображение списка запущенных контейнеров</li>
+      <li>docker stop: остановка запущенного контейнера</li>
+    </ul>
+    <header>
+      <h2>Что такое Docker ?</h2>
+    </header>
+    <center><iframe width="1024" height="550" src="https://www.youtube.com/embed/aZTL2zRmOnA?si=TFEwVQxVXP3SQE7h" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe></center>
+</article>
+<article id="kubernetes_orkestraciya_kontejnerov">
+  <h3>Kubernetes: оркестрация контейнеров</h3>
+  </header>
+  <div>
+    <blockquote>
+      <p>
+        Kubernetes – это система для оркестрации контейнеров, разработанная Google.
+      </p>
+      <p>
+        Она автоматизирует развертывание, управление и масштабирование контейнерных приложений.
+      </p>
+      <cite><a href="https://kubernetes.io/">Kubernetes.io</a></cite>
+    </blockquote>
+  </div>
+  <h4>Основные компоненты Kubernetes:</h4>
+  <ul>
+    <li>Кластеры: группы серверов, на которых запускаются контейнеры</li>
+    <li>Поды: минимальные единицы вычислительных ресурсов, содержащие 
+        один или несколько контейнеров</li>
+    <li>Сервисы: абстракции для доступа к группам подов</li>
+    <li>Деплойменты: объекты, управляющие обновлениями подов и 
+        обеспечивающие их масштабирование</li>
+  </ul>
+</article>
+<article id="podderzhka_drugih_instrumentov_Podman_CRI_O_i_drugie">
+  <header>
+    <h3>Поддержка других инструментов: Podman, CRI-O и другие</h3>
+  </header>
+  <div>
+    <p>
+      Кроме Docker и Kubernetes, существуют другие инструменты:
+    </p>
+  </div>
+  <div>
+    <dl>
+      <dt>Podman:</dt>
+      <dd>альтернатива Docker, обеспечивающая совместимость с OCI (Open Container Initiative) 
+          и улучшенную безопасность.</dd>
+    </dl>
+    <dl>
+      <dt>CRI-O:</dt>
+      <dd>инструмент для работы с контейнерами в Kubernetes, который предоставляет интерфейс 
+          для управления контейнерами через CRI (Container Runtime Interface).</dd>
+    </dl>
+  </div>
+</article>
+<!-- Кнопка возврата наверх-->
+          <footer>
+            <center><p></p><a href="#top">[Кнопка вверх ⚡️]</a></p></center>
+          </footer>
+
+      </main>
+    </div>
+    <script src="../docs/main.js"></script>
+    
+  </body>
+</html>
